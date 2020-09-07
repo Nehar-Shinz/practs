@@ -7,7 +7,7 @@ body{
 	text-align: center;
 	height: 900px;
 	background-image: url("../images/kits.png");
-	background-size: cover;
+	background-size: 100%;
 	background-repeat: no-repeat;
 	position: relative;
 }
