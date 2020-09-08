@@ -2,16 +2,8 @@ body{
 	font-family: arial;
 }
 
-.hero {
-	display: flex;
-	width: 100%;
-	text-align: center;
-	height: 800px;
-	background-image: url("../images/kits.png");
-	background-repeat: no-repeat;
-	background-position: center;
-	position: relative;
-	background-size: 100%;
+h1{
+	text-transform: uppercase;
 }
 
 nav{
@@ -44,16 +36,25 @@ nav p{
 	float: left;
 }
 
-h1{
-	text-transform: uppercase;
+.hero {
+	display: flex;
+	height: 800px;
+	background: url("../images/kits.png") no-repeat center;
+	position: relative;
+	background-size: cover;
+	background-color: #ffffff88;
 }
 
+
 .herotext{
-	width: 20%;
+	border: solid 5px #ffffff;
+	padding: 1%;
+	overflow: hidden;
+	width: 10%;
 	text-align: center;
-	position: relative;
-	top: 80%;
-	left: 40%;
-	vertical-align: middle;
+	position: absolute;
+	top: 50%;
+	left: 20%;
+	transform: translate(-50%,-50%);
 	color: #ffffff;
 }
