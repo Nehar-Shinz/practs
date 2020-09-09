@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Metal+Mania&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins:wght@500&display=swap');
 	*{
 	padding: 0;
 	margin: 0;
@@ -20,7 +19,7 @@
 	  
   label.logo{
 	color: white;
-	font-family: 'metal mania',sans-serif;
+	font-family: 'poppins',sans-serif;
 	font-size: 35px;
 	line-height: 80px;
 	padding: 0 100px;
@@ -135,6 +134,10 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 	color: #444444;
+	}
+
+	.herotext h1{
+		font-family: 'poppins',sans-serif;
 	}
 
 	/* .tt{
