@@ -1,48 +1,152 @@
-body{
-	font-family: arial;
-}
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Metal+Mania&display=swap');
 
-nav{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 1px 1%;
+	*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+	}
+
+	body{
+		font-family: 'Josefin Sans', sans-serif;
+	}
+
+	nav{
+	background: #2c3e50;
+	height: 80px;
 	width: 100%;
-	background-color: #ffffff;
-	z-index: 1;
-	visibility: visible;
-	position: fixed;
-}
+	  }
+	  
+  label.logo{
+	color: white;
+	font-family: 'metal mania',sans-serif;
+	font-size: 35px;
+	line-height: 80px;
+	padding: 0 100px;
+	font-weight: bold;
+  }
 
-.log{
-	text-transform: uppercase;
-}
+  nav ul{
+	float: right;
+	margin-right: 20px;
+  }
 
-.fi{
-	padding: 1% 5%;
+  nav ul li{
 	display: inline-block;
-	border: solid 1px;
-	margin: 1%;
-}
+	line-height: 80px;
+	margin: 0 5px;
+  }
 
-.hero {
-	display: flex;
-	height: 800px;
-	background: url("../images/kits.png") no-repeat center;
-	position: relative;
+  nav ul li a{
+	color: #eeeeee;
+	font-size: 17px;
+	padding: 7px 13px;
+	border-radius: 3px;
+	text-transform: uppercase;
+  }
+
+  a.active,a:hover{
+	background: #fb6a59;
+	transition: .5s;
+  }
+
+  .checkbtn{
+	font-size: 30px;
+	color: white;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+  }
+
+  #check{
+	display: none;
+  }
+
+  @media (max-width: 952px){
+	label.logo{
+	  font-size: 30px;
+	  padding-left: 50px;
+	}
+
+	nav ul li a{
+	  font-size: 16px;
+	}
+  }
+
+  @media (max-width: 858px){
+	.checkbtn{
+	  display: block;
+	}
+	ul{
+		z-index: 3;
+	  position: fixed;
+	  width: 100%;
+	  height: 100vh;
+	  background: #2c3e50;
+	  top: 80px;
+	  left: -100%;
+	  text-align: center;
+	  transition: all .5s;
+	}
+	nav ul li{
+	  display: block;
+	  margin: 50px 0;
+	  line-height: 30px;
+	}
+	nav ul li a{
+	  font-size: 20px;
+	}
+	a:hover,a.active{
+	  background: none;
+	  color: #0082e6;
+	}
+	#check:checked ~ ul{
+	  left: 0;
+	}
+  }
+
+  section{
+	background: url("../images/kits.png") no-repeat;
 	background-size: cover;
-}
+	background-position: right;
+	height: calc(100vh - 80px);
+  }
+
+  .hero {
+	background: url("../images/kits.png") no-repeat;
+	background-size: cover;
+	background-position: left;
+	height: calc(100vh - 80px);
+  }
 
 
-.herotext{
-	border: solid 5px #ffffff;
+	.herotext{
+	border: solid 5px #2c3e50;
 	background: #eeeeee;
-	padding: 1%;
+	padding: 2.5%;
+	z-index: 2;
 	overflow: hidden;
 	text-align: center;
 	position: absolute;
 	top: 50%;
-	left: 20%;
-	transform: translate(-50%,-50%);
+	left: 50%;
+	transform: translate(-50%, -50%);
 	color: #444444;
-}
+	}
+
+	/* .tt{
+		background-color: #eeeeee;
+		border: solid 1px;
+		margin-top: 10px;
+		padding: 2px 5px;
+		font-weight: bold;
+		transition-property: background;
+		transition-duration: 1s;
+	}
+
+	tt:hover{
+		background-color: #fb6a59;
+	} */
