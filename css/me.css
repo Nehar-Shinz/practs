@@ -98,26 +98,26 @@
 
 	.abtsec{
 		position: relative;
-		height: 50vh;
 		display: flex;
 		justify-content: space-evenly;
-		margin: 2.5% auto;
 	}
 
 	.abtsdivs{
 		margin: auto;
+		/* background-color: lightseagreen; */
 	}
 
 	.avatar{
-		background-image: url("../images/avatar.jpeg");
-		background-position: top;
-		background-repeat: no-repeat;
-		background-size: cover;
 		height: 35vh;
-		width: 15vw;
 		padding: 2.5%;
+		margin: auto;
 	}
-	
+
+	#devpic{
+		height: inherit;
+	}
+
+
 	.abttxts{
 		width: 50vw;
 		padding: 5%;
@@ -132,10 +132,6 @@
 
 	nav ul li a{
 	  font-size: 16px;
-	}
-
-	.avatar{
-		width: 50vw;
 	}
   }
 
