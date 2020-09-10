@@ -88,7 +88,7 @@
 	}
 
 	.herotext h1{
-		text-align: initial;
+		text-align: left;
 		font-family: 'poppins',sans-serif;
 	}
 
@@ -96,12 +96,34 @@
 		margin-top: 35px;
 	}
 
-	/* .abtsec{
+	.abtsec{
 		position: relative;
-	} */
+		height: 50vh;
+		display: flex;
+		justify-content: space-evenly;
+		margin: 2.5% auto;
+	}
 
+	.abtsdivs{
+		margin: auto;
+	}
 
+	.avatar{
+		background-image: url("../images/avatar.jpeg");
+		background-position: top;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 35vh;
+		width: 15vw;
+		padding: 2.5%;
+	}
+	
+	.abttxts{
+		width: 50vw;
+		padding: 5%;
+	}
 
+	/* Tablet size */
   @media (max-width: 952px){
 	label.logo{
 	  font-size: 30px;
@@ -111,8 +133,13 @@
 	nav ul li a{
 	  font-size: 16px;
 	}
+
+	.avatar{
+		width: 50vw;
+	}
   }
 
+  /* Phone size */
   @media (max-width: 858px){
 	label.logo{
 		font-size: 25px;
@@ -123,7 +150,7 @@
 	}
 	ul{
 		z-index: 3;
-	  position: fixed;
+	  position: absolute;
 	  width: 100%;
 	  height: 100vh;
 	  background: #2c3e50;
@@ -140,7 +167,7 @@
 	nav ul li a{
 	  font-size: 20px;
 	}
-	a:hover,a.active{
+	a:hover{
 	  background: none;
 	  color: #0082e6;
 	}
@@ -148,3 +175,4 @@
 	  left: 0;
 	}
   }
+
