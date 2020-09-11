@@ -99,32 +99,80 @@
 	.abtsec{
 		position: relative;
 		display: flex;
-		justify-content: space-evenly;
+		height: 40vh;
+		/* background-color: magenta; */ 
+		justify-content: center;
+		margin-bottom: 2%;
 	}
 
 	.abtsdivs{
 		margin: auto;
+		height: 35vh;
+		padding: 2.5%;
+		text-align: center;
+		margin: auto;
 		/* background-color: lightseagreen; */
 	}
 
-	.avatar{
-		height: 35vh;
-		padding: 2.5%;
-		margin: auto;
-	}
 
 	#devpic{
-		height: inherit;
+		height: 100%;
 	}
 
 
 	.abttxts{
-		width: 50vw;
+		text-align: left;
+		height: auto;
+	}
+
+	.wdskills{
+		margin: 2%;
+		display: grid;
+		/* background-color: seagreen; */
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr;
+		text-align: center;
+	}
+
+	.oskills{
+		display: grid;
+		/* background-color: teal; */
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		text-align: center;
+		margin: auto;
+	}
+
+	.wdskills div{
+		height: 20vh;
 		padding: 5%;
 	}
 
+	.oskills div{
+		height: 20vh;
+		padding: 5%;
+	}
+
+	.skills img{
+		height: 60%;
+	}
+
+	.skilltitle{
+		grid-column: 1/4;
+		width: 100%;
+		text-align: center;
+		text-transform: capitalize;
+		/* background-color: lightcoral; */
+	}
+
+	.skills h1{
+		font-size: 1.25em;
+	}
+
+
 	/* Tablet size */
   @media (max-width: 952px){
+
 	label.logo{
 	  font-size: 30px;
 	  padding-left: 50px;
@@ -137,6 +185,7 @@
 
   /* Phone size */
   @media (max-width: 858px){
+
 	label.logo{
 		font-size: 25px;
 		padding-left: 30px;
@@ -171,4 +220,5 @@
 	  left: 0;
 	}
   }
+
 
